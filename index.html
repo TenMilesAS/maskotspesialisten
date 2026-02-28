@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/Lenovo/Downloads/index.html -->
+<html lang="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maskotspesialisten – Maskoter av høy kvalitet</title>
+  <link href="./Maskotspesialisten – Maskoter av høy kvalitet_files/css2" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a1f3c;
+      --navy-light: #252b50;
+      --orange: #f5a623;
+      --orange-dark: #e8900a;
+      --gold: #ffd166;
+      --blue-accent: #5b9bd5;
+      --white: #ffffff;
+      --text-light: #d0d8f0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2.5rem;
+      background: rgba(26, 31, 60, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(245, 166, 35, 0.15);
+    }
+
+    .nav-logo-img { height: 48px; width: auto; mix-blend-mode: lighten; }
+    .nav-logo {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.5rem;
+      color: var(--orange);
+      letter-spacing: 0.5px;
+    }
+    .nav-logo span { color: var(--blue-accent); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    nav ul a:hover { color: var(--orange); }
+
+    .nav-cta {
+      background: var(--orange);
+      color: var(--navy) !important;
+      padding: 0.5rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 800 !important;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold) !important; transform: scale(1.05); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(245,166,35,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(91,155,213,0.1) 0%, transparent 60%);
+    }
+
+    /* floating blobs */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.15;
+      animation: float 8s ease-in-out infinite;
+    }
+    .blob1 { width: 400px; height: 400px; background: var(--orange); top: -100px; right: -100px; animation-delay: 0s; }
+    .blob2 { width: 300px; height: 300px; background: var(--blue-accent); bottom: -50px; left: -80px; animation-delay: -3s; }
+    .blob3 { width: 200px; height: 200px; background: var(--gold); top: 50%; left: 20%; animation-delay: -5s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-30px) scale(1.05); }
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 780px; }
+
+    .hero-logo {
+      width: 300px;
+      height: auto;
+      margin-bottom: 2rem;
+      animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+      filter: drop-shadow(0 20px 40px rgba(245,166,35,0.4));
+      mix-blend-mode: screen;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.7) translateY(20px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .hero h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+      animation: slideUp 0.8s 0.2s both;
+    }
+
+    .hero h1 .highlight {
+      color: var(--orange);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero p {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      animation: slideUp 0.8s 0.35s both;
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: slideUp 0.8s 0.5s both;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+      color: var(--navy);
+      padding: 0.9rem 2.2rem;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 8px 30px rgba(245,166,35,0.4);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(245,166,35,0.5); }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      color: var(--white);
+      padding: 0.9rem 2.2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.15); transform: translateY(-3px); }
+
+    /* ── SECTION BASE ── */
+    section { padding: 6rem 2rem; }
+
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(245,166,35,0.15);
+      color: var(--orange);
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(245,166,35,0.3);
+    }
+
+    .section-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+
+    .section-subtitle {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .step {
+      background: var(--navy-light);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 2rem 1.75rem;
+      position: relative;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .step:hover { transform: translateY(-6px); border-color: rgba(245,166,35,0.4); }
+
+    .step-num {
+      font-family: 'Fredoka One', cursive;
+      font-size: 3rem;
+      color: rgba(245,166,35,0.2);
+      position: absolute;
+      top: 1rem; right: 1.5rem;
+      line-height: 1;
+    }
+
+    .step-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .step h3 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+      color: var(--white);
+    }
+    .step p { color: var(--text-light); font-size: 0.95rem; line-height: 1.6; }
+
+    /* ── WHY US ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .why-card {
+      background: linear-gradient(135deg, rgba(245,166,35,0.08), rgba(91,155,213,0.06));
+      border: 1px solid rgba(245,166,35,0.15);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: transform 0.3s;
+    }
+    .why-card:hover { transform: translateY(-5px); }
+
+    .why-card .icon { font-size: 2.2rem; margin-bottom: 1rem; }
+    .why-card h3 { font-family: 'Fredoka One', cursive; font-size: 1.25rem; margin-bottom: 0.5rem; }
+    .why-card p { color: var(--text-light); font-size: 0.95rem; line-height: 1.6; }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      background: var(--navy-light);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 700px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+      nav ul { display: none; }
+    }
+
+    .contact-info p {
+      color: var(--text-light);
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+    .contact-detail .icon { font-size: 1.3rem; }
+    .contact-detail a { color: var(--orange); text-decoration: none; font-weight: 700; }
+    .contact-detail a:hover { text-decoration: underline; }
+
+    form { display: flex; flex-direction: column; gap: 1rem; }
+
+    form input, form textarea, form select {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 0.9rem 1.2rem;
+      color: var(--white);
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    form input::placeholder, form textarea::placeholder { color: rgba(255,255,255,0.3); }
+    form input:focus, form textarea:focus { border-color: var(--orange); }
+    form textarea { resize: vertical; min-height: 130px; }
+
+    form button {
+      background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+      color: var(--navy);
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 2rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 25px rgba(245,166,35,0.35);
+    }
+    form button:hover { transform: translateY(-2px); box-shadow: 0 10px 35px rgba(245,166,35,0.5); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2.5rem;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.9rem;
+    }
+    footer span { color: var(--orange); }
+
+    /* ── DIVIDER ── */
+    .paw-divider {
+      text-align: center;
+      font-size: 1.5rem;
+      opacity: 0.3;
+      margin: 0;
+      letter-spacing: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Maskot<span>spesialisten</span></div>
+    <ul>
+      <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#hvordan">Hvordan det fungerer</a></li>
+      <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#hvorfor">Hvorfor oss</a></li>
+      <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#kontakt" class="nav-cta">Kontakt oss</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <div class="hero-content">
+
+      <h1>Vi skaper <span class="highlight">maskoter</span><br>som folk aldri glemmer</h1>
+      <p>Norges fremste leverandør av skreddersydde maskoter av høy kvalitet — til idrettslag, bedrifter, arrangementer og merkevarer som vil skille seg ut.</p>
+
+      <div class="hero-buttons">
+        <a href="file:///C:/Users/Lenovo/Downloads/index.html#kontakt" class="btn-primary">🐯 Få din maskot</a>
+        <a href="file:///C:/Users/Lenovo/Downloads/index.html#hvordan" class="btn-secondary">Se hvordan det fungerer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="hvordan">
+    <div class="section-inner">
+      <div class="section-tag">Prosessen</div>
+      <h2 class="section-title">Fra idé til ikonisk maskot</h2>
+      <p class="section-subtitle">Vi holder deg med i hele prosessen — fra første skisse til ferdig produkt du er stolt av å vise frem.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-icon">💬</div>
+          <h3>Fortell oss om deg</h3>
+          <p>Du beskriver hvem dere er, hva maskoten skal representere og hvilken stemning dere ønsker å formidle.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-icon">✏️</div>
+          <h3>Vi designer</h3>
+          <p>Våre designere lager et unikt konsept tilpasset din merkevare — med rom for justeringer underveis.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-icon">🧵</div>
+          <h3>Vi produserer</h3>
+          <p>Maskoter produseres i høy kvalitet med materialer som tåler bruk — enten det er scenen, banen eller gata.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-icon">🎉</div>
+          <h3>Levering og glede</h3>
+          <p>Maskoten leveres klar til bruk. Vi sørger for at du er 100% fornøyd før vi sender den av gårde.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="hvorfor" style="background: rgba(255,255,255,0.02);">
+    <div class="section-inner">
+      <div class="section-tag">Hvorfor oss</div>
+      <h2 class="section-title">Kvalitet du kan se og kjenne</h2>
+      <p class="section-subtitle">Vi har ett eneste fokus: å lage de beste maskotene. Det gir resultater.</p>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="icon">⭐</div>
+          <h3>Kun høy kvalitet</h3>
+          <p>Vi setter aldri kvalitet til side for å spare tid eller kostnader. Hvert produkt er noe vi er stolte av.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">🎨</div>
+          <h3>100% skreddersydd</h3>
+          <p>Ingen maskoter er like. Alt vi lager er unikt designet for deg og din merkevare.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">🤝</div>
+          <h3>Tett samarbeid</h3>
+          <p>Du er med hele veien. Vi jobber ikke bak lukkede dører — vi jobber sammen med deg.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">🏆</div>
+          <h3>Erfarne spesialister</h3>
+          <p>Maskotproduksjon er vår spesialitet — ikke en av mange tjenester. Det merkes i resultatet.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">🚀</div>
+          <h3>Rask levering</h3>
+          <p>Vi vet at deadlines er viktige. Vi holder det vi lover — og varsler deg tidlig hvis noe skjer.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon">💛</div>
+          <h3>Begeistrer og gleder</h3>
+          <p>En god maskot skaper øyeblikk folk husker. Det er det vi lever for å lage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="kontakt" class="contact-section">
+    <div class="section-inner">
+      <div class="section-tag">Kontakt</div>
+      <h2 class="section-title">Klar for din maskot?</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Ta gjerne kontakt for en uforpliktende prat om hva slags maskot du ser for deg. Vi svarer raskt og hjelper deg gjerne med å finne den beste løsningen.</p>
+
+          <div class="contact-detail">
+            <span class="icon">📧</span>
+            <span>E-post: <a href="mailto:hei@maskotspesialisten.no">hei@maskotspesialisten.no</a></span>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">📍</span>
+            <span>Norge</span>
+          </div>
+        </div>
+
+        <form>
+          <input type="text" placeholder="Ditt navn" required="">
+          <input type="email" placeholder="E-postadresse" required="">
+          <input type="text" placeholder="Organisasjon / merkevare (valgfritt)">
+          <textarea placeholder="Fortell litt om maskoten du ser for deg..."></textarea>
+          <button type="submit">Send melding 🐾</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 <span>Maskotspesialisten</span> · Laget med 🧡 i Norge</p>
+  </footer>
+
+
+
+</body></html>
