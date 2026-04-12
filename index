@@ -364,7 +364,7 @@
   <nav>
     <div class="nav-logo">Maskot<span>spesialisten</span></div>
     <ul>
-      <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#hvordan">Hvordan det fungerer</a></li>
+      <li><a href="file:///C:/Users/Lenovo/Downloads/index.htmlslik-fungerer-det/index.html">Slik fungerer det</a></li>
       <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#hvorfor">Hvorfor oss</a></li>
       <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#kontakt" class="nav-cta">Kontakt oss</a></li>
     </ul>
@@ -383,7 +383,7 @@
 
       <div class="hero-buttons">
         <a href="file:///C:/Users/Lenovo/Downloads/index.html#kontakt" class="btn-primary">🐯 Få din maskot</a>
-        <a href="file:///C:/Users/Lenovo/Downloads/index.html#hvordan" class="btn-secondary">Se hvordan det fungerer</a>
+        <a href="file:///C:/Users/Lenovo/Downloads/index.htmlslik-fungerer-det/index.html" class="btn-secondary">Slik fungerer det</a>
       </div>
     </div>
   </section>
