@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0044)file:///C:/Users/Lenovo/Downloads/index.html -->
+<!-- saved from url=(0044) -->
 <html lang="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -364,9 +364,9 @@
   <nav>
     <div class="nav-logo">Maskot<span>spesialisten</span></div>
     <ul>
-      <li><a href="file:///C:/Users/Lenovo/Downloads/index.htmlslik-fungerer-det/index.html">Slik fungerer det</a></li>
-      <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#hvorfor">Hvorfor oss</a></li>
-      <li><a href="file:///C:/Users/Lenovo/Downloads/index.html#kontakt" class="nav-cta">Kontakt oss</a></li>
+      <li><a href="slik-fungerer-det/index.html">Slik fungerer det</a></li>
+      <li><a href="#hvorfor">Hvorfor oss</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakt oss</a></li>
     </ul>
   </nav>
 
@@ -382,8 +382,8 @@
       <p>Norges fremste leverandør av skreddersydde maskoter av høy kvalitet — til idrettslag, bedrifter, arrangementer og merkevarer som vil skille seg ut.</p>
 
       <div class="hero-buttons">
-        <a href="file:///C:/Users/Lenovo/Downloads/index.html#kontakt" class="btn-primary">🐯 Få din maskot</a>
-        <a href="file:///C:/Users/Lenovo/Downloads/index.htmlslik-fungerer-det/index.html" class="btn-secondary">Slik fungerer det</a>
+        <a href="#kontakt" class="btn-primary">🐯 Få din maskot</a>
+        <a href="slik-fungerer-det/index.html" class="btn-secondary">Slik fungerer det</a>
       </div>
     </div>
   </section>
