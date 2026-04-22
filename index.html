@@ -890,6 +890,12 @@
     .footer-social a:hover svg { fill: var(--orange); }
 
     .footer-nav {
+      position: static !important;
+      background: none !important;
+      backdrop-filter: none !important;
+      border-bottom: none !important;
+      z-index: auto !important;
+      padding: 0 !important;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -1046,10 +1052,9 @@
       <span></span><span></span><span></span>
     </button>
     <ul id="navMenu">
-      <li><a href="#hvordan">Slik fungerer det</a></li>
-      <li><a href="#galleri">Galleri</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#kontakt" class="nav-cta">Få din maskot</a></li>
+      <li><a href="https://maskotspesialisten.no/slik-fungerer-det">Slik fungerer det</a></li>
+      <li><a href="#hvorfor">Hvorfor oss</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakt oss</a></li>
     </ul>
   </nav>
 
@@ -1088,41 +1093,6 @@
 
   <div id="main"></div>
 
-  <!-- ─── STATS BAR ─── -->
-  <div class="stats-bar">
-    <div class="stats-inner">
-      <div class="stat-item fade-in">
-        <span class="stat-number" data-target="20">0</span>
-        <span class="stat-label">Maskoter laget</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item fade-in fade-in-delay-1">
-        <span class="stat-number" data-target="100">0</span>
-        <span class="stat-label">% fornøyde kunder</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item fade-in fade-in-delay-2">
-        <span class="stat-number" data-target="6">0</span>
-        <span class="stat-label">Ukers leveringstid</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item fade-in fade-in-delay-3">
-        <span class="stat-number" data-target="5">0</span>
-        <span class="stat-label">Stjerner i snitt</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ─── CLIENT LOGOS ─── -->
-  <div class="clients-bar">
-    <div class="clients-inner">
-      <p class="clients-label">Stoler på oss</p>
-      <div class="clients-logos">
-        <img src="oslo universitetssykehus.png" alt="Oslo universitetssykehus">
-        <!-- Legg til flere logoer her etter hvert -->
-      </div>
-    </div>
-  </div>
 
   <!-- ─── HOW IT WORKS ─── -->
   <section id="hvordan">
@@ -1183,14 +1153,6 @@
       <p class="section-subtitle fade-in">Ingen maskot er lik – hvert prosjekt er en ny mulighet til å skape noe unikt.</p>
       <div class="gallery-grid">
         <div class="gallery-item fade-in fade-in-delay-1">
-          <img src="hero-tiger.png" alt="Tiger-maskot">
-          <div class="gallery-item-overlay"></div>
-        </div>
-        <div class="gallery-item fade-in fade-in-delay-2">
-          <img src="hare.png" alt="Hare-maskot">
-          <div class="gallery-item-overlay"></div>
-        </div>
-        <div class="gallery-item fade-in fade-in-delay-3">
           <img src="hare2.png" alt="Huskymaskot">
           <div class="gallery-item-overlay"></div>
         </div>
@@ -1463,7 +1425,7 @@
         </a>
       </div>
       <nav class="footer-nav" aria-label="Bunnavigasjon">
-        <a href="#hvordan">Slik fungerer det</a>
+        <a href="https://maskotspesialisten.no/slik-fungerer-det">Slik fungerer det</a>
         <a href="#galleri">Galleri</a>
         <a href="#faq">FAQ</a>
         <a href="#kontakt">Kontakt</a>
