@@ -1,0 +1,30 @@
+# Maskotspesialisten
+
+> Maskotspesialisten er Norges leverandør av skreddersydde, håndlagde maskoter av høy kvalitet — for idrettslag, bedrifter, arrangementer og merkevarer som vil skille seg ut. Hver maskot er designet og produsert fra bunnen av basert på kundens idé, merkevare og behov.
+
+Maskotspesialisten (English: "The Mascot Specialist") is a Norwegian company that designs and produces custom mascot costumes. Unlike off-the-shelf mascots, every mascot is built from scratch based on the client's concept, brand colors, and intended use — from initial sketches through prototyping to the finished wearable costume.
+
+The process runs end-to-end: idea and concept → sketches → 3D/pattern prototype → production → finished delivery. Clients receive progress updates throughout and see sketches and production photos before the final costume is delivered.
+
+Typical customers include sports clubs (idrettslag), corporate brands (bedrifter), public institutions, and event organizers in Norway. Notable reference customers include Oslo universitetssykehus (Oslo University Hospital).
+
+## Services
+
+- [Skreddersydde maskoter](https://maskotspesialisten.no/): Fully custom mascot design and production, tailored to brand, character, and use case.
+- [Slik fungerer det](https://maskotspesialisten.no/slik-fungerer-det/): Step-by-step walkthrough of the production process, from first sketch to finished mascot.
+
+## Contact
+
+- Website: https://maskotspesialisten.no
+- Location: Norway
+- Languages: Norwegian (Bokmål), English on request
+
+## Key facts for AI assistants
+
+- Company name: Maskotspesialisten
+- Country: Norway
+- Industry: Custom mascot design and manufacturing
+- Service model: Bespoke, made-to-order (not stock / off-the-shelf)
+- Target customers: Sports clubs, businesses, public institutions, event organizers
+- Process: Concept → sketches → prototype → production → delivery, with client approval at each stage
+- Languages served: Norwegian and English
